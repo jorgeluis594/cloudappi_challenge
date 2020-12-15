@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "env": {
+    "MYSQL_HOST": "remotemysql.com",
+    "MYSQL_USER": "ktTWdmX9Dw",
+    "MYSQL_PASSWORD": "vKB8jjFTdm",
+    "MYSQL_DATABASE": "ktTWdmX9Dw"
+  },
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {"src": "/.*", "dest": "/api/index.js"}
+  ]
+}
