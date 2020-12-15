@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "49be733b-a15b-4c2b-8406-e5b0e57cddca",
+		"_postman_id": "458e7d1a-c085-4d9b-bb6f-c5280ad8c336",
 		"name": "CloudAppi",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"test3\",\n\t\"email\": \"jorg3.594@gmail.com\",\n\t\"birthDate\": \"1995-11-20\",\n\t\"address\": {\n      \"street\": \"por alla\",\n      \"state\": \"ves\",\n      \"city\": \"lima\",\n      \"country\": \"peru\",\n      \"zip\": \"lima 01\"\n    }\n}",
+					"raw": "{\n\t\"name\": \"test4\",\n\t\"email\": \"jorg3.594@gmail.com\",\n\t\"birthDate\": \"1995-11-20\",\n\t\"address\": {\n      \"street\": \"por alla\",\n      \"state\": \"ves\",\n      \"city\": \"lima\",\n      \"country\": \"peru\",\n      \"zip\": \"lima 01\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://cloudappi.vercel.app/createUsers",
+					"raw": "https://cloudappi.vercel.app/users/createUsers",
 					"protocol": "https",
 					"host": [
 						"cloudappi",
@@ -28,6 +28,7 @@
 						"app"
 					],
 					"path": [
+						"users",
 						"createUsers"
 					]
 				}
@@ -40,7 +41,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://cloudappi.vercel.app/getusers",
+					"raw": "https://cloudappi.vercel.app/users/getusers",
 					"protocol": "https",
 					"host": [
 						"cloudappi",
@@ -48,6 +49,7 @@
 						"app"
 					],
 					"path": [
+						"users",
 						"getusers"
 					]
 				}
@@ -60,7 +62,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://cloudappi.vercel.app/getusersById/5",
+					"raw": "https://cloudappi.vercel.app/users/getusersById/5",
 					"protocol": "https",
 					"host": [
 						"cloudappi",
@@ -68,6 +70,7 @@
 						"app"
 					],
 					"path": [
+						"users",
 						"getusersById",
 						"5"
 					]
@@ -90,7 +93,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://cloudappi.vercel.app/updateUsersById/2",
+					"raw": "https://cloudappi.vercel.app/users/updateUsersById/2",
 					"protocol": "https",
 					"host": [
 						"cloudappi",
@@ -98,6 +101,7 @@
 						"app"
 					],
 					"path": [
+						"users",
 						"updateUsersById",
 						"2"
 					]
@@ -111,7 +115,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://cloudappi.vercel.app/deleteUsersById/5",
+					"raw": "https://cloudappi.vercel.app/users/deleteUsersById/5",
 					"protocol": "https",
 					"host": [
 						"cloudappi",
@@ -119,6 +123,7 @@
 						"app"
 					],
 					"path": [
+						"users",
 						"deleteUsersById",
 						"5"
 					]
@@ -131,7 +136,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d49a35cd-3eff-4c50-b963-d16496007027",
+				"id": "0d6add15-5c23-4a1c-94ad-dfc797a761bf",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -141,7 +146,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a32984f0-2df6-4d26-a132-d2a322afb66b",
+				"id": "7249cea3-f5cf-4653-9245-ff2f4a12af94",
 				"type": "text/javascript",
 				"exec": [
 					""

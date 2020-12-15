@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.redirect('/api-docs');
 });
+app.use('/users', user);
 
-app.use(user);
 // Load Swagger
 app.use(
   '/api-docs',

@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "title": "Users"
   },
-  "host": "api.users.es",
+  "host": "https://cloudappi.vercel.app",
   "basePath": "/users",
   "schemes": [
     "http",
